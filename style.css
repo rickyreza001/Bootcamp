@@ -1,0 +1,152 @@
+body {
+    background-color: #E0E0E0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.container {
+    margin: 1em;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(87, 210, 87);
+}
+
+.button-search {
+    padding: 1.1em;
+    width: 20%;
+    background-color: rgb(87, 210, 87);
+    border: none;
+    color: white;
+}
+
+.input-search {
+    flex: 1;
+    padding: 1em;
+}
+
+.hot-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.show-casemenu {
+    grid-row: span 2;
+    object-fit: cover;
+}
+
+.input-holder {
+    width: 60%;
+    display: flex;
+}
+
+.search-listing {
+    background-color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+    font-size: x-large;
+    color: rgb(87, 210, 87);
+}
+
+.title-search {
+    width: 30%;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1em;
+    max-width: 10rem;
+    border-radius: .5em;
+}
+
+.card p {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-content {
+    padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .hot-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-header {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    .title-search {
+        width: 100%;
+    }
+
+    .input-holder {
+        width: 100%;
+        gap: .5em
+    }
+
+    .card {
+        max-width: 10rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .card>img {
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hot-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-header {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    .title-search {
+        width: 100%;
+    }
+
+    .input-holder {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .button-search {
+        width: 100%;
+    }
+}
